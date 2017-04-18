@@ -1,1 +1,40 @@
-{     "devDependencies": {         "phaser-tiled": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-phaser-tiled",     "homepage": "https://github.com/npmtest/node-npmtest-phaser-tiled",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-phaser-tiled.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [phaser-tiled (v2.0.2)](https://github.com/englercj/phaser-tiled)  [![npm package](https://img.shields.io/npm/v/npmtest-phaser-tiled.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-phaser-tiled) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-phaser-tiled.svg)](https://travis-ci.org/npmtest/node-npmtest-phaser-tiled)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "phaser-tiled": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-phaser-tiled",
+    "keywords": [
+        "coverage",
+        "test",
+        "phaser-tiled"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_phaser_tiled.js",
+    "name": "npmtest-phaser-tiled",
+    "nameAlias": "npmtest_phaser_tiled",
+    "nameOriginal": "npmtest-phaser-tiled",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-phaser-tiled.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
