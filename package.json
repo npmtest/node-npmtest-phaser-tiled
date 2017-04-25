@@ -1,6 +1,6 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "description": "#### test coverage for  [phaser-tiled (v2.0.2)](https://github.com/englercj/phaser-tiled)  [![npm package](https://img.shields.io/npm/v/npmtest-phaser-tiled.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-phaser-tiled) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-phaser-tiled.svg)](https://travis-ci.org/npmtest/node-npmtest-phaser-tiled)",
+    "description": "#### basic test coverage for  [phaser-tiled (v2.0.2)](https://github.com/englercj/phaser-tiled)  [![npm package](https://img.shields.io/npm/v/npmtest-phaser-tiled.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-phaser-tiled) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-phaser-tiled.svg)](https://travis-ci.org/npmtest/node-npmtest-phaser-tiled)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "phaser-tiled": "*",
@@ -36,5 +36,5 @@
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
-    "version": "0.0.1"
+    "version": "2017.4.25"
 }
